@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".view.CadastroCliente"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/prata">
 
     <include layout="@layout/activity_tool_bar"/>
 
@@ -40,7 +41,8 @@
             android:textSize="16dp"
             android:hint="Digite o codigo do cliente..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etCod"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,7 +64,8 @@
             android:textSize="16dp"
             android:hint="Digite seu nome completo..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etNome"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,7 +87,8 @@
             android:textSize="16dp"
             android:hint="Digite seu CPF..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etCpf"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,7 +110,8 @@
             android:textSize="16dp"
             android:hint="Digite sua data de nascimento..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etDtNasc"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -121,14 +126,14 @@
             android:textColor="@color/black"
             android:textSize="25dp"/>
 
-        <EditText
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext"
             android:textSize="16dp"
-            android:hint="Digite o codigo do endereco..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/spCodEnd"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -157,6 +162,6 @@
             android:layout_marginLeft="5dp"
             android:textColor="@color/white"
             android:background="@drawable/botaoverde"
-            android:id="@+id/btAgendarCell"/>
+            android:id="@+id/btCadastrar"/>
     </LinearLayout>
 </LinearLayout>

@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".view.CadastroItem"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/prata">
 
     <include layout="@layout/activity_tool_bar"/>
 
@@ -39,7 +40,8 @@
             android:textSize="16dp"
             android:hint="Digite o codigo do item..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etCod"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +63,8 @@
             android:textSize="16dp"
             android:hint="Digite a descrição do produto..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etDesc"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,7 +86,8 @@
             android:textSize="16dp"
             android:hint="Digite o valor do produto..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etVlrUnit"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +109,8 @@
             android:textSize="16dp"
             android:hint="Digite a unidade de medida do produto..."
             android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"/>
+            android:layout_marginVertical="5dp"
+            android:id="@+id/etUniMed"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -134,6 +139,6 @@
             android:layout_marginLeft="5dp"
             android:textColor="@color/white"
             android:background="@drawable/botaoverde"
-            android:id="@+id/btAgendarCell"/>
+            android:id="@+id/btCadastrar"/>
     </LinearLayout>
 </LinearLayout>
