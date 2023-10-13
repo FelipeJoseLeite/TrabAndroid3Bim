@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_tool_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cadastro de Endereco"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/botaoverde"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btCadEndereco"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cadastro de Cliente"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/botaovermelho"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btCadCliente"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cadastro de item"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/botaoazul"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btCadItem"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Pedido de Venda"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/botaoamarelo"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btPedVenda"/>
+    </LinearLayout>
+</LinearLayout>
