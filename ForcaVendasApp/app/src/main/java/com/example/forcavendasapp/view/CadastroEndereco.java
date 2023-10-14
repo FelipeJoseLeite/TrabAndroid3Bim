@@ -84,6 +84,8 @@ public class CadastroEndereco extends AppCompatActivity {
                         Toast.makeText(CadastroEndereco.this, "Por favor, preencha todos os campos!!!", Toast.LENGTH_SHORT).show();
                     }
                 }
+                Intent intent = new Intent(CadastroEndereco.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 

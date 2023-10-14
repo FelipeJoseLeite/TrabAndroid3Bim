@@ -36,7 +36,7 @@ public class EnderecoAdapter extends ArrayAdapter<Endereco> {
         Endereco endereco = getItem(position);
 
         if (endereco != null) {
-            textView.setText(endereco.getLogradouro());
+            textView.setText(endereco.getCidade());
         }
 
         return convertView;

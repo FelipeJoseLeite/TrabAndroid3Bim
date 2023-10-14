@@ -10,236 +10,258 @@
 
     <include layout="@layout/activity_tool_bar"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp">
-
-        <TextView
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selecione o Cliente:"
-            android:textColor="@color/black"
-            android:textSize="25dp"/>
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext"
-            android:textSize="16dp"
-            android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"
-            android:id="@+id/spSelCli"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selecione o Cliente:"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Selecione o Item:"
-            android:textColor="@color/black"
-            android:textSize="25dp"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:textSize="16dp"
+                    android:paddingVertical="11dp"
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/spSelCli"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp">
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext"
-            android:textSize="16dp"
-            android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"
-            android:id="@+id/spSelItem"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Endereco para Entrega:"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quantidade de Itens:"
-            android:textColor="@color/black"
-            android:textSize="25dp"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:textSize="16dp"
+                    android:paddingVertical="11dp"
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/spSelEnd"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext"
-            android:textSize="16dp"
-            android:hint="Digite a quantidada"
-            android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"
-            android:id="@+id/etQtItens"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selecione o Item:"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Remover"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/botaovermelho"
-            android:id="@+id/btRemover"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:textSize="16dp"
+                    android:paddingVertical="11dp"
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/spSelItem"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="Adicionar"
-            android:layout_marginLeft="5dp"
-            android:textColor="@color/white"
-            android:background="@drawable/botaoverde"
-            android:id="@+id/btAdicionar"/>
-    </LinearLayout>
-    <ListView
-        android:id="@+id/tvItensPedido"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantidade de Itens:"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"/>
 
-    <TextView
-        android:id="@+id/tvValorTotal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Valor Total: 0.0"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:textSize="16dp"
+                    android:hint="Digite a quantidada"
+                    android:paddingVertical="11dp"
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/etQtItens"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp">
 
-    <TextView
-        android:id="@+id/tVTotalItens"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Total de Itens: 0"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/black"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Remover"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/botaovermelho"
+                    android:id="@+id/btRemover"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Condição de Pagamento:"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/black"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Adicionar"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/botaoverde"
+                    android:id="@+id/btAdicionar"/>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/tvItensPedido"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"/>
 
-    <RadioGroup
-        android:id="@+id/radioGroupCondicaoPagamento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tvValorTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor Total: 0.0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/rbAVista"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="À Vista" />
+            <TextView
+                android:id="@+id/tVTotalItens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total de Itens: 0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/rbAPrazo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="À Prazo"
-            android:layout_marginLeft="10dp"/>
-    </RadioGroup>
-    <TextView
-        android:id="@+id/tvParcelas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Informe a quantidade de parcelas"
-        android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Condição de Pagamento:"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/rgCondicaoPagamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp">
 
-        <EditText
-            android:id="@+id/edQntPar"
-            android:layout_width="156dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:visibility="gone" />
+                <RadioButton
+                    android:id="@+id/rbAVista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="À Vista" />
 
-        <Button
-            android:id="@+id/btGerPar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:visibility="gone"
-            android:text="Calcular"
-            android:textColor="@color/white"
-            android:background="@drawable/botaoazul"/>
+                <RadioButton
+                    android:id="@+id/rbAPrazo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="À Prazo"
+                    android:layout_marginLeft="10dp"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/tvParcelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informe a quantidade de parcelas"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:layout_marginHorizontal="10dp"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Endereco para Entrega:"
-            android:textColor="@color/black"
-            android:textSize="25dp"/>
+                <EditText
+                    android:id="@+id/etQntPar"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext"
+                    android:textSize="15dp"/>
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext"
-            android:textSize="16dp"
-            android:paddingVertical="11dp"
-            android:layout_marginVertical="5dp"
-            android:id="@+id/spSelEnd"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="5dp">
+                <Button
+                    android:id="@+id/btGerPar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:visibility="gone"
+                    android:text="Calcular"
+                    android:textColor="@color/white"
+                    android:background="@drawable/botaoazul"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cancelar"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/botaovermelho"
-            android:id="@+id/btCancel"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvPar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="Cadastrar"
-            android:layout_marginLeft="5dp"
-            android:textColor="@color/white"
-            android:background="@drawable/botaoverde"
-            android:id="@+id/btCadastrar"/>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancelar"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/botaovermelho"
+                    android:id="@+id/btCancel"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Cadastrar"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/botaoverde"
+                    android:id="@+id/btCadastrar"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

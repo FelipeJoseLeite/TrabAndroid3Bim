@@ -57,6 +57,8 @@ public class CadastroItem extends AppCompatActivity {
                 } else {
                     Toast.makeText(CadastroItem.this, "Por favor, preencha todos os campos para criar um novo item", Toast.LENGTH_SHORT).show();
                 }
+                Intent intent = new Intent(CadastroItem.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

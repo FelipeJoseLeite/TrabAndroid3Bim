@@ -21,7 +21,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public long getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
@@ -53,7 +53,7 @@ public class Cliente {
         this.dtNasc = dtNasc;
     }
 
-    public long getCodEndereco() {
+    public int getCodEndereco() {
         return codEndereco;
     }
 

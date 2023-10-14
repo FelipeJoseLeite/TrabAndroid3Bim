@@ -79,6 +79,8 @@ public class CadastroCliente extends AppCompatActivity {
                 } else {
                     Toast.makeText(CadastroCliente.this, "Por favor, preencha todos os campos!", Toast.LENGTH_SHORT).show();
                 }
+                Intent intent = new Intent(CadastroCliente.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
