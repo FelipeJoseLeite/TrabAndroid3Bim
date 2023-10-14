@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class Cliente {
 
-    private int codigo;
+    private Integer codigo;
     private String nome;
     private String cpf;
     private String dtNasc;
-    private int codEndereco;
+    private Integer codEndereco;
 
-    public Cliente(int codigo, String nome, String cpf, String dtNasc, int codEndereco) {
+    public Cliente(Integer codigo, String nome, String cpf, String dtNasc, Integer codEndereco) {
         this.codigo = codigo;
         this.nome = nome;
         this.cpf = cpf;
@@ -21,11 +21,11 @@ public class Cliente {
     public Cliente() {
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
@@ -53,11 +53,11 @@ public class Cliente {
         this.dtNasc = dtNasc;
     }
 
-    public int getCodEndereco() {
+    public Integer getCodEndereco() {
         return codEndereco;
     }
 
-    public void setCodEndereco(int codEndereco) {
+    public void setCodEndereco(Integer codEndereco) {
         this.codEndereco = codEndereco;
     }
 }
